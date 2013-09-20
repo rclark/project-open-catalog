@@ -1,7 +1,7 @@
 var nano = require('nano')('http://localhost:5984'),
     _ = require('underscore'),
     
-    dbName = 'project-open-couch',
+    dbName = 'project-open-catalog',
     db = nano.use(dbName);
 
 module.exports = {
