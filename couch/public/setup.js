@@ -9,7 +9,8 @@ var _ = require('underscore'),
       {
         _id: '_design/lookups',
         language: 'javascript',
-        views: require('../design/lookups')
+        views: require('../design/lookups').views,
+        lists: require('../design/lookups').lists
       }
     ];
 
