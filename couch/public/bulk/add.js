@@ -1,17 +1,13 @@
 var _ = require('underscore'),
     validate = require('../../../schema').validate,
+    addIdentifiers = require('../../private/addIdentifiers'),
     uuid = require('node-uuid');
     
 module.exports = function (db, metadatas, callback) {
   callback = callback || function () {};
   
   // Give IDs to records that don't have one
-  metadatas = _.map(metadatas, function (metadata) {
-    if (!metadata.hasOwnProperty('identifier') || metadata.identifier === '') {
-      metadata.identifier = uuid.v4();
-    }
-    return metadata;
-  });
+  metadatas = addIdentifiers(metadatas);
   
   var identifiers = [],
       errors = [],
