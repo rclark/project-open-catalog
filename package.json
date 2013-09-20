@@ -1,0 +1,32 @@
+{
+  "name": "project-open-couch",
+  "version": "0.0.0",
+  "description": "Project Open Data Style Metadata in CouchDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rclark/project-open-couch.git"
+  },
+  "keywords": [
+    "couchdb",
+    "metadata",
+    "open",
+    "data"
+  ],
+  "author": "Ryan Clark",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rclark/project-open-couch/issues"
+  },
+  "dependencies": {
+    "underscore": "~1.5.2",
+    "express": "~3.4.0",
+    "nano": "~4.1.3",
+    "amanda": "~0.4.7",
+    "optimist": "~0.6.0",
+    "node-uuid": "~1.4.1"
+  }
+}

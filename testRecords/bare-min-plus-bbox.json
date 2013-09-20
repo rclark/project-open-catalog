@@ -1,0 +1,23 @@
+{
+  
+  "title": "Minimalistic record with a spatial coordinate",
+  
+  "description": "An example metadata record with absolutely the bare minimum content.",
+  
+  "keyword": "a,b,c",
+  
+  "modified": "2013-09-17",
+  
+  "publisher": "Arizona Geological Survey",
+  
+  "person": "Ryan Clark",
+  
+  "mbox": "ryan.clark@azgs.az.gov",
+  
+  "identifier": "hibbity-haw-somepoly",
+  
+  "accessLevel": "Public",
+  
+  "spatial": "-111,33,-110,34"
+  
+}
