@@ -1,9 +1,9 @@
 module.exports = function (head, req) {
-  var sent = [];
+  var sent = [],
+      row = getRow();
   
   send('[');
   
-  var row = getRow();
   if (row) { 
     send('"' + row.key + '"'); 
     sent.push(row.key);
@@ -17,4 +17,4 @@ module.exports = function (head, req) {
   }
   
   send(']');
-}
+};
