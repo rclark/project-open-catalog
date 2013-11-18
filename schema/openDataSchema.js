@@ -73,14 +73,14 @@ module.exports = function (additionals, overrides) {
     dataDictionary: {
       type: "string",
       format: "url",
-      required: conditional(),
+      required: conditional("dataDictionary"),
       description: "URL to the data dictionary for the dataset or API. Note that documentation other than a Data Dictionary can be referenced using Related Documents as shown in the expanded fields."
     },
     
     accessURL: {
       type: "string",
       format: "url",
-      required: conditional(),
+      required: conditional("accessURL"),
       description: "URL providing direct access to the downloadable distribution of a dataset."
     },
     
